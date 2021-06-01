@@ -27,6 +27,7 @@ First install the dependencies:
   $ pip install pyjwt ifaddr jsonschema pyee tornado zeroconf
 
 Then clone the repository as your project directory (only webthings directory is needed):
+
 .. code:: shell
 
   $ git clone https://github.com/m2ag-labs/webthing-python.git
