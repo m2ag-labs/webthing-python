@@ -1,0 +1,10 @@
+*.egg
+*.egg-info/
+*.py[cod]
+*.swp
+*~
+/build/
+/dist/
+/requirements.txt
+__pycache__/
+/venv
