@@ -18,7 +18,8 @@ from pathlib import Path
     Setting enable false will signal the thing to bypass auth checks.
 """
 CONFIG_FILE = 'jwt_config.json'
-CONFIG_PATH = f'{str(Path.home())}/.m2ag-labs/secrets'
+# CONFIG_PATH = f'{str(Path.home())}/.m2ag-labs/secrets'
+CONFIG_PATH = f'{str(Path.home())}/.webthings/things'
 OPTIONS = {
     'enable': True,
     'local_bypass': True,
