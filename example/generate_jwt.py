@@ -9,11 +9,11 @@ from jwt import encode
 # secret can be any string
 # enable false will bypass auth checks'''
 try:
-    #  with open(f'{str(Path.home())}/.m2ag-labs/secrets/jwt_secret.json', 'r') as file:
-    with open(f'{str(Path.home())}/.webthings/things/jwt_secret.json', 'r') as file:
+    #  with open(f'{str(Path.home())}/.m2ag-labs/secrets/jwt_config.json', 'r') as file:
+    with open(f'{str(Path.home())}/.webthings/things/jwt_config.json', 'r') as file:
         opts = loads(file.read().replace('\n', ''))
         for i in opts:
-            if i == 'secret':
+            if i == 'secret_key':
                 SECRET = opts[i]
 except FileNotFoundError:
     print('Please run the sever with JWT enabled before using this script')
